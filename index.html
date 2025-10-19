@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Testable Profile Card</title>
+</head>
+<body>
+    <main>
+        <article class="profile-card" data-testid = "test-profile-card">
+        <header class = "card-header">
+            <h2 data-testid = "test-user-name" id="user-name">Oyinkansola's Card</h2>
+            <div>
+                <small>Rendered at (ms): <span data-testid="test-user-time" id="user-time">0</span></small>
+            </div>
+        </header>
+
+        <div class="card-body">
+            <figure class="avatar-figure" >
+                <img src="./images/photo_2025-10-19_22-41-58.jpg" alt="Portrait of Oyinkansola" data-testid="test-user-avatar"/>
+                <figcaption>Oyinkansola</figcaption>
+            </figure>
+            <section class="content">
+                <p data-testid="test-user-bio" id="user-bio">Oyinkansola is a software engineer with a passion for building user-friendly applications.</p>
+
+                <nav data-testid="test-user-socials-links" class="social-links">
+                    <a href="https://x.com/oyinkansola_ak?s=21" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                    <a href="https://github.com/AkinwumiOyinkansola" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+                    <a href="http://linkedin.com/in/akinwumi-oyinkansola" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+                </nav>
+
+                <!--Hobbies-->
+                <section class="hobbies" data-testid="test-user-hobbies">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Coding</li>
+                        <li>Reading Tech Blogs</li>
+                        <li>Traveling</li>
+                    </ul>
+                </section>
+
+                <!--Dislikes-->
+                <section class="dislikes" data-testid="test-user-dislikes">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Procrastination</li>
+                        <li>Poor Documentation</li>
+                        <li>Unreliable Internet</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </article>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+</html>
