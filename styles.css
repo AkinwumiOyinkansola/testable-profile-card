@@ -25,7 +25,7 @@ body {
   max-width: 700px;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -175,4 +175,16 @@ section.dislikes ul {
   .content p {
     font-size: 1.05rem;
   }
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #2563eb;
 }
